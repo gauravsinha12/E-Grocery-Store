@@ -1,0 +1,155 @@
+@import './mixin';
+
+
+// button start
+.button{
+    @include button()
+}
+.btn_badge{
+    width: 20px;
+    height: 20px;
+    font-size: 0.9rem;
+}
+.search_btn{
+    @include button();
+    padding:1rem;
+    border-radius:50%;
+    font-size: 1rem;
+}
+.btn{
+    transition: .5s; 
+    &:focus{
+        box-shadow: 0 0 0 .25rem rgba(129,196,8,.25) !important;
+       
+    }
+
+    &.border_secondary{
+        &:hover{
+            background-color: $bg-secondary;
+            color:$text-white;
+            box-shadow: none;
+            box-shadow: 0 0 0 .25rem rgba(129,196,8,.25) !important;
+        }
+        
+    }
+}
+
+.btn_square{
+    @include btn-square();
+    width: 120px;
+    height: 120px;
+}
+.btn_md_square{
+    @include btn-square();
+    width: 44px;
+    height: 44px;
+}
+
+.btn_sm{
+    @include btn-sm()
+}
+
+// button end
+
+// border start
+.border_1{
+    border-width: 1px;
+}
+.border_2{
+    border-width: 2px !important;
+}
+.border_3{
+    border-width: 3px;
+}
+.border_4{
+    border-width: 4px;
+}
+.border_5{
+    border-width: 5px;
+}
+.border_6{
+    border-width: 6px;
+}
+.border_7{
+    border-width: 7px;
+}
+
+// border end
+
+
+// border_radius start
+.border_rounded_10{
+    border-radius: 10px !important;
+}
+.border_rounded_20{
+    border-radius: 20px !important;
+}
+// border-bottom-10
+.border_rounded_bottom_10{
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius:10px !important;
+}
+.border_rounded_top_10{
+    border-top-right-radius: 10px !important;
+    border-top-left-radius:10px !important;
+}
+// border left
+.rounded_start_10{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+// border right
+.rounded_end_10{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+// border_radius end
+
+// border-color start
+.border_secondary{
+    @include border-color($bg-secondary);
+}
+.border_dark{
+    @include border-color($bg-dark);
+}
+.border_gray_600{
+    @include border-color($bg-gray-600);
+}
+.border_primary{
+    @include border-color($bg-primary);
+}
+.border_white{
+    @include border-color($bg-white);
+}
+// end border-color
+// otling start
+.btn_outline_secondary{
+    color:$text-secondary;
+    border-color:$bg-secondary;
+    &:hover{
+        color:$text-black;
+        background-color:$bg-secondary;
+        border-color:$bg-secondary;
+    }
+}
+// otling end
+
+// line-height
+.line_hight_1{
+    line-height: 1.2;
+}
+// line-height end
+// image_outer
+.image_outer_sm_cover{
+    @include image_outer(80px, 80px, $objectFit:cover)
+}
+.image_outer{
+    @include image_outer()
+}
+.image_outer_contain{
+    @include image_outer($objectFit:contain)
+}
+.image_outer_md_contain{
+    @include image_outer(400px,400px,contain)
+}
+

@@ -1,0 +1,65 @@
+// font family
+$primary-font:"Raleway", sans-serif;
+$poppins-font:'Poppins', sans-serif;
+$secondary-font:'Teko', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
+$open-sans: "Open Sans", sans-serif;
+
+
+$text-primary: #81c408;
+$text-secondary:#ffb524;
+$text-dark:#747d88;
+$text-light:#f4f6f8;
+// Text Color Variables
+$text-white:#fff;
+$text-white-50:rgb(255 255 255 / 50%);
+$text-black:#000;
+
+// gray
+$text-gray-200:#f8f8f8;
+$text-gray-300:#eff3f6;
+$text-gray-500:#D0D3D4;
+$text-gray-600:#45595b;
+// black
+$text-black-100:#111111fc;
+
+// navy blue
+$text-navy-blue-800:#00173c;
+
+
+
+
+
+
+
+$bg-primary:#81c408;
+$bg-secondary:#ffb524;
+$bg-dark:#747d88;
+$bg-light:#f4f6f8;
+// Background Color Variables
+$bg-white:#fff;
+$bg-black:#000;
+
+// gray
+$bg-gray-200:#f8f8f8;
+$bg-gray-300:#eff3f6;
+$bg-gray-500:#D0D3D4;
+$bg-gray-600:#45595b;
+
+// navy blue
+$bg-navy-blue-800:#00173c;
+
+// black
+$bg-black-100:#111111;
+
+
+
+
+// Media Query Screen Breakpoints
+
+$breakpoint-xxl:1440px;
+$breakpoint-xl:1200px;
+$breakpoint-lg:1030px;
+$breakpoint-md:991px;
+$breakpoint-768:768px;
+$breakpoint-sm:550px;

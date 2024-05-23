@@ -1,0 +1,83 @@
+@import './variable';
+// @mixin button ($textColor: $text-white, $backgroundColor: $bg-primary) {
+//     display: inline-block;
+//     width: fit-content;
+//     // padding:0.75rem 1rem;
+//     padding: 0.9rem 2.857rem;
+//     border-radius: 0rem;
+//     background-color:$backgroundColor;
+//     color:$textColor;
+//     cursor: pointer;
+//     transition:all 400ms ease; 
+//     font-family: $primary-font;
+//     font-weight: normal;
+//     font-size: 1rem;
+//     overflow: hidden;
+
+//     &:hover,
+//     &:focus{
+//         background-color:lighten($backgroundColor, 4%);
+//         // background-color: rgba($focusBg, $opacity);
+//         color:$textColor;  
+//         outline:none;
+//         box-shadow:none;
+       
+//     }
+
+//     @media (max-width:1200px) {
+//         padding: 0.9rem 1.857rem;
+//     }
+// }
+@mixin button($bg:$bg-white,$color:$text-primary,$hoverBg:$bg-secondary, $opacity:1, $hoverColor:$text-white){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    font-size: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition:all 400ms ease; 
+    background-color: $bg;
+    color:$color;
+    padding: 0.9rem 2.857rem;
+    width: fit-content;
+    border-radius: 0rem;
+    &:hover,
+    &:focus{
+            background-color: rgba($hoverBg, $opacity);
+            color:$hoverColor;  
+            outline:none;
+            box-shadow:none;
+           
+        }
+}   
+@mixin border-color($bgColor){
+    // #{if(&,'&.border-secondary', '.border-secondary')}{
+    //     border-color: $bgColor;
+    // }
+    border-color: $bgColor !important;
+    transition:all 400ms ease; 
+   
+}
+@mixin btn-square(){
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    transition: .5s;
+}
+@mixin btn-sm( $py:.25rem, $px:.5rem){
+    padding: $py $px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+@mixin image_outer($width:100px, $height:100px,$objectFit:cover){
+    width:$width;
+    height:$height;
+    img{
+        object-fit:$objectFit;
+        width: 100%;
+        height: 100%;
+    }
+}

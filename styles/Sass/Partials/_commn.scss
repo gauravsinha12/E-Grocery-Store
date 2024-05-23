@@ -1,0 +1,36 @@
+.range_slider{
+  input[type='range'] {
+    overflow: hidden;
+    // width: 150px;
+    -webkit-appearance: none;
+    background-color: $bg-gray-500;
+    border-radius: 4px;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track{
+    height: 10px;
+    -webkit-appearance: none;
+    color: $text-primary;
+    margin-top: -1px;
+    width: 100%;
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: $bg-secondary;
+    box-shadow: -80px 0 0 80px $bg-primary;
+  }
+}
+
+.page_header{
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/cart-page-header-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 46px;
+}
+

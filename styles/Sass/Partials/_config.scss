@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// font railway
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+//font "Open Sans", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+    
+
+
+// @import "./variable";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color:$text-primary;
+    text-decoration: none;
+    &:hover{
+        color:$text-primary;
+    }
+}
+.form-control{
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+        &:focus {
+            color: #747d88;
+            background-color: #fff;
+            border-color: #c0e284;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgba(129,196,8,.25);
+        }
+}
+
+/*===== General CSS =====*/
+body,html{
+    font-family:$open-sans;
+    font-size:16px;
+    font-weight: 400;
+    color:$text-dark;
+    line-height: 1.5;
+
+    @media (max-width:$breakpoint-md){
+        font-size: 10px;
+    }
+}
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-family: $primary-font;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $text-gray-600;
+}
+.btn{
+    font-weight: 600;
+    transition: .5s;
+}
